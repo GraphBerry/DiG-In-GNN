@@ -1,5 +1,5 @@
 # An PyTorch implementation for our DiG-In-GNN
-A Discriminative Feature Guided GNN against Inconsistency, to <i><u>dig in</u></i>to graphs for fraudsters. The code will be made public after the paper is accepted.
+A Discriminative Feature Guided GNN against Inconsistency, to <u><i>dig in</i></u>to graphs for fraudsters. The code will be made public after the paper is accepted.
 
 ## Dependencies
 <!-- `requirements.yaml` is for creating a conda environment.
