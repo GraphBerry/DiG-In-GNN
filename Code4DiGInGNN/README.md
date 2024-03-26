@@ -31,7 +31,7 @@ pip install tqdm PyYAML matplotlib seaborn opencv-python
 
 ## Download the datasets
 
-Due to the size limit of supplementary material, the dataset file `data.tar.gz` is uploaded to [Dropbox](https://www.dropbox.com/scl/fi/cas4ewe8s6o5nrvmlso14/data.tar.gz?rlkey=fwk7yaj3mz8o9icjq55mxdczc&dl=0) (`https://www.dropbox.com/scl/fi/cas4ewe8s6o5nrvmlso14/data.tar.gz?rlkey=fwk7yaj3mz8o9icjq55mxdczc&dl=0`) anonymously.
+Due to the size limit of supplementary material, the dataset file `data.tar.gz` is uploaded to [Dropbox](https://www.dropbox.com/scl/fi/cas4ewe8s6o5nrvmlso14/data.tar.gz?rlkey=fwk7yaj3mz8o9icjq55mxdczc&dl=0) anonymously.
 
 MD5: `c2623c886acb35d82661f05c4233d1c8`
 
