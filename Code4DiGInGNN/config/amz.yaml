@@ -1,0 +1,73 @@
+# Data
+data_name: 'amazon'
+data_dir: './data/amazon/'
+train_ratio: 0.4
+test_ratio: 0.67
+save_dir: './pytorch_models/amazon'
+gen_save_dir: './pytorch_models/amazon/gen/'
+
+# Model
+model: 'DiG-In-GNN'
+multi_relation: 'GNN'
+
+# Model architecture
+emb_size: 128
+
+thres: 0.45
+
+rho: 0.5
+
+seed: 7777777
+
+#RL
+ob_dim: 75
+action_dim: 2
+fc1_dim: 512
+fc2_dim: 512
+sample_rate1: 0.3
+sample_rate2: 0.02
+sample_rate3: 0.05
+rl_tolerance1: 0.06
+rl_tolerance2: 0.06
+rl_tolerance3: 0.06
+
+# hyper-parameters
+optimizer: 'adam'
+lr: 0.005
+weight_decay: 0.0005
+
+gen_lr: 0.003
+gen_weight_decay: 0.001
+
+rl_lr1: 0.003
+rl_lr2: 0.003
+rl_lr3: 0.003
+rl_weight_decay: 0.001
+
+batch_size: 256
+negsamp_ratio: 1
+num_epochs: 161
+valid_epochs: 1
+alpha: 2
+
+# Device
+cuda: True
+cuda_id: 0
+device: 'cuda:0'
+
+# model_update
+gnn_update_start: 72 # 41
+gen_update_end: 71 # 40
+rl_update_start: 72 # 41
+rl_update_end: 191
+label_update_end: 90
+laod_gen: False
+save_gen: False
+gen_num: 80
+
+# pick_step
+b_pick: 0.7
+f_pick: 0.5
+
+pick: 6
+

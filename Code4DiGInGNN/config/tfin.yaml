@@ -1,0 +1,73 @@
+# Data
+data_name: 'tfinance'
+data_dir: './data/tfinance/'
+train_ratio: 0.4
+test_ratio: 0.67
+save_dir: './pytorch_models/tfinance'
+gen_save_dir: './pytorch_models/tfinance/gen/'
+
+# Model
+model: 'DiG-In-GNN'
+multi_relation: 'GNN'
+
+# Model architecture
+emb_size: 128
+
+thres: 0.45
+
+rho: 0.5
+
+seed: 1234
+
+#RL
+ob_dim: 30
+action_dim: 2
+fc1_dim: 512
+fc2_dim: 512
+sample_rate1: 0.1
+sample_rate2: 0.1
+sample_rate3: 0.1
+rl_tolerance1: 0.09
+rl_tolerance2: 0.09
+rl_tolerance3: 0.09
+
+# hyper-parameters
+optimizer: 'adam'
+lr: 0.003
+weight_decay: 0.0005
+
+gen_lr: 0.003
+gen_weight_decay: 0.001
+
+rl_lr1: 0.003
+rl_lr2: 0.003
+rl_lr3: 0.003
+rl_weight_decay: 0.001
+
+batch_size: 256 # 2048 # 512
+negsamp_ratio: 1
+num_epochs: 161
+valid_epochs: 1
+alpha: 2
+
+# Device
+# cuda: True
+cuda: True
+cuda_id: 0
+device: 'cuda:0'
+
+# model_update
+gnn_update_start: 61 # 23
+gen_update_end: 60 # 22
+rl_update_start: 61 # 23
+rl_update_end: 191
+label_update_end: 90
+laod_gen: False
+save_gen: False
+gen_num: 80
+
+# pick_step
+b_pick: 1.0
+f_pick: 0.75
+
+pick: 8
